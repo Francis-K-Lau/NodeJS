@@ -34,5 +34,5 @@ app.use(errorController.get404);
 
 mongoConnect(() => {
   // console.log(client);
-  app.listen(3001);
+  app.listen(3000);
 })

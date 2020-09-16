@@ -1,5 +1,3 @@
-const { get } = require('../routes/shop');
-
 const getDb = require('../util/database').getDb;
 
 class Product {
@@ -19,7 +17,7 @@ class Product {
       })
       .catch(err => {
         console.log(err);
-      })
+      });
   }
 
   static fetchAll() {
@@ -48,7 +46,7 @@ class Product {
     })
     .catch(err => {
       console.log(err);
-    })
+    });
   }
 }
 

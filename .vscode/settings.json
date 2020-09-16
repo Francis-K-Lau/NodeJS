@@ -1,3 +1,54 @@
 {
-    "editor.fontSize": 8
+  // default fontsize for termianl
+
+  "fontshortcuts.defaultFontSize": 15,
+  "fontshortcuts.defaultTerminalFontSize": 15,
+  "fontshortcuts.step": 1,
+
+    "editor.fontSize": 12,
+
+  // Configure glob patterns for excluding files and folders.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+
+
+// File Explorer
+
+  // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
+  "explorer.openEditors.visible": 9,
+
+  // Controls if the height of the open editors section should adapt dynamically to the number of elements or not.
+  "explorer.openEditors.dynamicHeight": true,
+
+  // Controls if the explorer should automatically reveal and select files when opening them.
+  "explorer.autoReveal": true,
+
+  // Controls if the explorer should allow to move files and folders via drag and drop.
+  "explorer.enableDragAndDrop": true,
+
+  // Controls sorting order of files and folders in the explorer. In addition to the default sorting, you can set the order to 'mixed' (files and folders sorted combined), 'type' (by file type), 'modified' (by last modified date) or 'filesFirst' (sort files before folders).
+  "explorer.sortOrder": "default",
+
+// Search
+
+  // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+
+  // Controls whether to use ripgrep in text search
+  "search.useRipgrep": true,
+
+  // Controls whether to use .gitignore and .ignore files by default when searching in a new workspace.
+  "search.useIgnoreFilesByDefault": false,
+
+  // Configure to include results from a global symbol search in the file results for Quick Open.
+  "search.quickOpen.includeSymbols": false
+
 }

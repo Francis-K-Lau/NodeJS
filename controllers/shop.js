@@ -100,9 +100,6 @@ exports.getOrders = (req, res, next) => {
   req.user
     .getOrders()
     .then(orders => {
-
-      console.log('getOrder: ' + orders.length.toString());
-
       res.render('shop/orders', {
         path: '/orders',
         pageTitle: 'Your Orders',

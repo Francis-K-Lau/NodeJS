@@ -49,6 +49,8 @@
   "search.useIgnoreFilesByDefault": false,
 
   // Configure to include results from a global symbol search in the file results for Quick Open.
-  "search.quickOpen.includeSymbols": false
+  "search.quickOpen.includeSymbols": false,
+  "csharpextensions.privateMemberPrefix": "_",
+  "csharpextensions.useThisForCtorAssignments": false
 
 }
